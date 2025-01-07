@@ -644,6 +644,7 @@ footer {
         display: flex;
         justify-content: space-around;
         gap: 70px;
+        margin-left: -125px;
     }
     /* Projekt - menu */
     .projekter-menu nav ul {
@@ -652,7 +653,7 @@ footer {
         display: flex;
         justify-content: space-evenly;
         gap: 192px;
-        margin-left: -30px;
+        margin-left: -125px;
         margin-top: -50px;
     }
     /* Undersider - menu */
