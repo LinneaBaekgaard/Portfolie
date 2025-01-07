@@ -1,0 +1,14 @@
+/* Animation ***********************************/
+.fade_in{
+    animation: fade_in_kf 6s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes fade_in_kf {
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 100%;
+    }
+  }

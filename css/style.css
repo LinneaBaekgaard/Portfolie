@@ -1,0 +1,942 @@
+body {
+    font-family: 'Instrument Serif';
+    background-color: #F3EDE7;
+    margin: 0;
+    padding: 0;
+    max-width: 1920px;
+}
+img{
+    max-width: 100%;
+    height: 100%;
+}
+@font-face {
+    font-family: 'Instrument Serif';
+    src: url(../fonts/Instrument_Serif/InstrumentSerif-Regular.ttf) format('truetype');
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Instrument Sans";
+    src: url(../fonts/Instrument_Sans/InstrumentSans-VariableFont_wdth\,wght.ttf) format("truetype");
+    font-weight: 400;
+}
+/******************** OVERSKRIFTER ***********************/
+h2 {
+    color: #F2CE4F;
+    font-weight:lighter;
+    text-decoration: underline;
+    font-size: 3em;
+}
+h3 {
+    font-size: 40px;
+    font-weight: lighter;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 0 0 40px 0;
+}
+h4 {
+    margin-top: 0;
+    font-size: 20px;
+}
+strong {
+    font-weight: bold;
+}
+/*********************** MENU'ER **************************/
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3D221B;
+    height: 400px;
+    margin: 30px 20px 30px 20px;
+}
+
+.undersider-menu{
+    position: absolute;
+    top:20px;
+    bottom: 300px;
+    left: 73px;
+    top: -22px;
+}
+.undersider-menu nav ul li {
+    background-color: #3D221B;
+    width: 230px;
+    height: 70px;
+    border-radius: 6px;
+}
+.om-menu {
+    position: absolute;
+    bottom: 300px;
+    left: 90px;
+    top: -20px;
+}
+nav ul {
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0 0 0 40px;
+    padding: 0;
+    text-align: center;
+}
+h2:hover {
+    color: #ada483;
+}
+.brun2 {
+    background-color: #3D221B;
+    margin: 0;
+    padding: 20px 0 20px 0;
+}
+/****************** Dark-mode knap ************************/
+button {
+    font-family: "Instrument sans";
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #3D221B;
+    background-color: #F3EDE7;
+    color: #3D221B;
+}
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+button.dark-mode {
+    background-color: #3D221B;
+    color: #F3EDE7;
+    border: 1px solid #F3EDE7;
+}
+/********************* GRID MOBIL *************************/
+/************** Forside *************/
+.grid_1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.strand_overlay {
+    position: relative;
+    display: inline-block;
+    color: #fff;
+}
+.strand_overlay img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+/* Text-overlay */
+.text_overlay {
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 8em;
+}
+.portraet {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    margin-bottom: 30px;
+    margin-top: 30px;  
+}
+.linba {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.illustration {
+    background-color: #E8A08E;
+}
+.illustration img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+.fyld {
+    text-align: center;
+}
+/************* Projekter *************/
+.grid_1-1-1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+   margin: 40px 40px 0 40px;
+}
+.grid_1-1-1-1-1 img {
+    object-fit: cover;
+    border-radius: 0 20px 0 20px;
+    box-shadow: 0 10px 10px solid #000;
+}
+.grid_1-1-1-1-1 img:hover {
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+}
+/*************** Om mig ***************/
+/* Menu baren */
+.grid_1-1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0;
+}
+.hund img, 
+.solnedgang img, 
+.have img, 
+.bryllup img {
+    object-fit: cover;
+}
+.hund {
+    grid-column: 1;
+    grid-row: 1;
+}
+.solnedgang {
+    grid-column: 2;
+    grid-row: 1;
+}
+.have {
+    grid-column: 1;
+    grid-row: 2;
+}
+.bryllup {
+    grid-column: 2;
+    grid-row: 2;
+}
+/* Josias & om mig tekst */
+.grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.lyseblaa {
+    background-color: #ABB4B9;
+}
+.lyseblaa img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    padding: 30px 30px 30px 30px;
+}
+.tekst_grid {
+    font-family: "Instrument Sans";
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 50px 30px 50px;
+    font-size: 15px;
+    text-align: justify;
+}
+/* CV */
+.skoler p{
+    text-align: center;
+}
+.cv h3 {
+    font-family: "instrument serf";
+    color: #000;
+    margin: auto;
+}
+.cv h5 {
+    color: #000;
+    text-align: justify;
+    text-justify: inter-word;
+    margin: auto;
+    width: 50%;
+    font-weight: lighter;
+}
+.cv {
+    font-family: "Instrument Sans";
+    line-height: 1.6em;
+    color: #3D221B;
+    font-size: 20px;
+}
+.cv p {
+    margin-bottom: 1em;
+}
+/************* Undersider *************/
+.process_billede_web img,
+.process_billede_ux img,
+.process_billede_animation img,
+.process_billede_passion img,
+.process_billede_redesign img {
+width: 100%;
+height: 350px;
+filter: blur(7px);
+}
+/* Section */
+.border {
+    border-top: 1px solid #3D221B;
+    padding: 30px 30px 30px 30px;
+    align-content: center;
+}
+/* Tekster */
+.undersider_text1,
+.undersider_text4 {
+    line-height: 2em;
+
+}
+/* Grid */
+.grid1_undersider, 
+.grid2_undersider,
+.grid3_undersider,
+.grid4_undersider,
+.grid5_undersider {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.grid2_undersider {
+    padding: 10px 10px 10px 10px;
+}
+.undersider_7 {
+    line-height: 2em;
+}
+/************************ KNAPPER *************************/
+/* Projektside - knapper */
+.knapper {
+    background-color: #3D221B;
+    width: 250px;
+    height: 60px;
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 10px 20px;
+}
+.knapper a, 
+.knapper-web a{
+    text-decoration: none;
+    color: #F3EDE7;
+    font-size: 30px;
+    font-weight: lighter;
+}
+.knapper:hover, 
+.knapper-web:hover {
+    background-color: #d8c7b7;
+    border-radius: 1px solid #3d221b;
+    color: #3D221B;
+}
+/* Undersider - knapper */
+.knapper-web {
+    background-color: #3D221B;
+    width: 250px;
+    height: 60px;
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20%;
+}
+/************************* FOOTER *************************/
+footer {
+    text-align: center;
+    border-top: 2px solid #3D221B;
+    margin: 0;
+    padding: 15px 0 0 0;
+}
+/*********************** CSS TABLET ***********************/
+@media (width >= 700px) {
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    h2 {
+        font-size: 35px;
+        font-weight: lighter;
+    }
+    h3 {
+        font-size: 60px;
+    }
+    h4 {
+        font-size: 40px;
+    }
+
+    /***** Menu *****/
+    .menu {
+        grid-column: 3;
+        grid-row: 1;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+    .om-menu, .undersider-menu {
+        position: absolute;
+        top:30px;
+        bottom: 300px;
+        left: 150px;
+    }
+    .om-menu nav ul {
+        list-style-type: none;
+        text-decoration: none;
+        display: flex;
+        justify-content: space-around;
+        gap: 70px;
+    }
+    .projekter-menu {
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+    }
+    .projekter-menu nav ul {
+        list-style-type: none;
+        text-decoration: none;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 100px;
+        padding-top: 50px;
+        padding-left: 0;
+    }
+    /* Undersider - menu */
+    .undersider-menu nav ul {
+        display: flex;
+        list-style-type: none;
+        text-decoration: none;
+        justify-content: space-around;
+        margin-left: -115px;
+        margin-top: 150px;
+        gap: 20px;
+    }
+    .undersider-menu nav ul li {
+        background-color: #3D221B;
+        width: 200px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /************* Forside ************/
+    /* Grid */
+    .grid_1-1-1 {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        /* grid-template-rows: 50vh 50vh; vh = viewport heigt*/
+    }
+    .fyld {
+        grid-column: span 1/2;
+        grid-row: 2;
+        align-content: center; 
+    }
+
+    /* Tekst overlay */
+    .strand_overlay {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .strand_overlay img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        margin: 0;
+        padding: 0;
+    }
+    .text_overlay {
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 7em;
+    }
+
+    /* Portræt billede */
+    .portraet {
+        grid-column: 2;
+        grid-row: 1;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .portraet img {
+        object-fit: cover;
+        display: block;
+        height: 100%;
+    }
+
+    /* Linba */
+    .linba {
+        grid-column: 2;
+        grid-row: 2;
+        width: 200px;
+    }
+    .linba img {
+        width: 100%;
+    }
+
+    /* Illustration */
+    .illustration {
+        grid-column: 3;
+        grid-row: 2;
+    }
+    .illustration img {
+        align-content: center;
+        width: 100%;
+        height: auto;
+    }
+
+    /************* Projekter ************/
+    /* Menu */
+    .brun2 {
+        background-color: #3D221B;
+        margin: 0;
+        padding: 10px 0 20px 0;
+        height: 200px;
+    }
+    /* Grid */
+    .grid_1-1-1-1-1 {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .grid_1-1-1-1-1 img {
+        object-fit: cover;
+        border-radius: 0 20px 0 20px;
+        box-shadow: 0 10px 10px solid #000;
+    }
+
+    /*********** Undersider ***********/
+    .process_billede_web img,
+    .process_billede_ux img,
+    .process_billede_animation img,
+    .process_billede_passion img,
+    .process_billede_redesign img {
+        width: 100%;
+        height: 450px;
+        object-fit: cover;
+        }
+        .undersider_text2 {
+            border-left: 1px solid #3D221B;
+            border-right: 1px solid #3D221B;
+            padding: 10px 10px 10px 10px;
+        }
+        /* Section */
+        .border {
+            border-top: 1px solid #3D221B;
+            padding: 30px 30px 30px 30px;
+            align-content: center;
+        }
+
+        /* Tekster */
+        .undersider_text {
+            text-align: center;
+        }
+        /* Grid */
+        .grid1_undersider, 
+        .grid2_undersider,
+        .grid3_undersider,
+        .grid4_undersider,
+        .grid5_undersider {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+    /************* Om mig *************/
+    /* Grid */
+    .grid_1-1-1-1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 0;
+    }
+    .hund img,
+    .solnedgang img,
+    .have img,
+    .bryllup img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .hund {
+        grid-column: 1;
+    }
+    .solnedgang {
+        grid-column: 2;
+    }
+    .have {
+        grid-column: 3;
+        grid-row: 1;
+    }
+    .bryllup {
+        grid-column: 4;
+        grid-row: 1;
+    }
+    /* Josias & Om mig tekst */
+    .grid_1-1 {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .lyseblaa {
+        background-color: #ABB4B9;
+    }
+    .lyseblaa img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 400px;
+        padding: 30px 30px 30px 30px;
+    }
+    .tekst_grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0 50px 30px 50px;
+    }
+    /* CV */ 
+    .brun {
+        background-color: #3D221B;
+    }
+    .cv {
+        margin: 30px 30px 30px 30px;
+        padding: 10px 20px 10px 20px;
+        color: #F3EDE7;
+        text-align: justify;
+    }
+
+    /************* Knapper ************/
+    .knapper {
+        background-color: #3D221B;
+        width: 200px;
+        height: 60px;
+        display: flex;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0 70px 230px;
+    }
+    .knapper a{
+        text-decoration: none;
+        color: #F3EDE7;
+        font-size: 30px;
+        font-weight: lighter;
+    }
+}
+/********************** CSS DESKTOP ***********************/
+@media (width >= 1000px) {
+    img {
+        width: 100%;
+        height: auto;
+    }
+    h2 {
+        font-size: 50px;
+        font-weight: lighter;
+    }
+    h3 {
+        font-size: 60px;
+    }
+    h4 {
+        font-size: 40px;
+    }
+
+    /********** Menu **********/
+    .menu {
+        grid-column: 3;
+        grid-row: 1;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+    .om-menu, .projekter-menu, .undersider-menu {
+        position: absolute;
+        top:85px;
+        bottom: 300px;
+        left: 320px;
+    }
+    .om-menu nav ul {
+        list-style-type: none;
+        text-decoration: none;
+        display: flex;
+        justify-content: space-around;
+        gap: 70px;
+    }
+    /* Projekt - menu */
+    .projekter-menu nav ul {
+        list-style-type: none;
+        text-decoration: none;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 192px;
+        margin-left: -30px;
+        margin-top: -50px;
+    }
+    /* Undersider - menu */
+    .undersider-menu nav ul {
+        list-style-type: none;
+        text-decoration: none;
+        gap: 180px;
+        margin-left: -55px;
+    }
+    .undersider-menu nav ul li {
+        background-color: transparent;
+    }
+    .undersider-menu {
+        margin-top: -100px;
+    }
+    /* Om mig - menu */
+    .om-menu nav ul {
+        list-style-type: none;
+        text-decoration: none;
+        display: flex;
+        justify-content: space-around;
+        gap: 180px;
+    }
+
+
+    /************* Forside ************/
+    /* Grid */
+    .grid_1-1-1 {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: 50vh 50vh; /* vh = viewport heigt*/
+    }
+    .fyld {
+        grid-column: span 1/2;
+        grid-row: 2;
+        align-content: center; 
+    }
+    /* Tekst overlay */
+    .strand_overlay {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .strand_overlay img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        margin: 0;
+        padding: 0;
+    }
+    .text_overlay {
+        position: absolute;
+        top: 193px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        /* text-align: center; */
+        font-size: 12rem;
+    }
+    /* Portræt billede */
+    .portraet {
+        grid-column: 2;
+        grid-row: 1;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .portraet img {
+        object-fit: cover;
+        display: block;
+        height: 100%;
+    }
+    /* Linba */
+    .linba {
+        grid-column: 2;
+        grid-row: 2;
+        width: 200px;
+    }
+    .linba img {
+        width: 100%;
+    }
+    /* Illustration */
+    .illustration {
+        grid-column: 3;
+        grid-row: 2;
+    }
+    .illustration img {
+        align-content: center;
+        width: 100%;
+        height: auto;
+    }
+
+    /************* Projekter ************/
+    /* Menu */
+    .brun2 {
+        background-color: #3D221B;
+        margin: 0;
+        padding: 10px 0 20px 0;
+        height: 250px;
+    }
+    /* Grid */
+    .grid_1-1-1-1-1 {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);;
+       margin: 40px 40px 70px 100px;
+    }
+    .grid_1-1-1-1-1 img {
+        object-fit: cover;
+        width: 200px;
+        border-radius: 0 20px 0 20px;
+        box-shadow: 0 10px 10px solid #000;
+        align-content: center;
+    }
+
+    /************* Om mig *************/
+    /* Grid */
+    .grid_1-1-1-1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 0;
+    }
+    .hund img,
+    .solnedgang img,
+    .have img,
+    .bryllup img {
+        object-fit: cover;
+    }
+    .hund {
+        grid-column: 1;
+    }
+    .solnedgang {
+        grid-column: 2;
+    }
+    .have {
+        grid-column: 3;
+        grid-row: 1;
+    }
+    .bryllup {
+        grid-column: 4;
+        grid-row: 1;
+    }
+    /* Josias & Om mig tekst */
+    .grid_1-1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .lyseblaa {
+        background-color: #ABB4B9;
+    }
+    .lyseblaa img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 650px;
+        padding: 40px 40px 40px 40px;
+    }
+    .tekst_grid {
+        line-height: 1.9em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0px 70px 30px 100px;
+        gap: 70px;
+    }
+    /* CV */ 
+    .skoler {
+        text-align: center;
+    }
+    .brun {
+        background-color: #3D221B;
+    }
+    .cv {
+        margin: 50px 60px 0px 60px;
+        padding-top: 50px;
+        color: #F3EDE7;
+        border-top: 2px solid #3d221b;
+    }
+
+    /************ Undersider ************/
+    .process_billede_web img {
+        content: url(../imgs/ny_web_process.webp);
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    .process_billede_ux img {
+        content: url(../imgs/ny_ux_process.webp);
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+    .process_billede_animation img {
+        content: url(../imgs/ny_animation_process.webp);
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+    .process_billede_passion img {
+        content: url(../imgs/ny_passion_process.webp);
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+    .process_billede_redesign img {
+        content: url(../imgs/ny_redesign_process.webp);
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+    /* Section */
+    .border {
+        display: grid;
+        border-top: 1px solid #3D221B;
+        padding: 30px 30px 30px 30px;
+        align-content: center;
+    }
+    /* Grid */
+    .grid1_undersider,
+    .grid3_undersider,
+    .grid4_undersider,
+    .grid5_undersider,
+    .grid6_undersider {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .grid3_undersider {
+        padding: 60px 60px 60px 60px;
+        margin: 0;
+        gap: 20px;
+    }
+    .grid2_undersider {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .undersider_2 {
+        grid-column: 1;
+        width: 100%;
+    }
+    .undersider_text2 {
+        grid-column: 2;
+        text-align: center;
+        align-items: center;
+        line-height: 2em;
+        border-left: 1px solid #3D221B;
+        border-right: 1px solid #3D221B;
+        padding: 10px 10px 10px 10px;
+    }
+    .undersider_3 {
+        grid-column: 3;
+    }
+    .undersider_5{
+        grid-column: 2;
+    }
+    .undersider_text5 {
+        grid-column: 1;
+    }
+    
+    /************* Knapper ************/
+    .knapper {
+        grid-column: span 1;
+        background-color: #3D221B;
+        width: 200px;
+        height: 60px;
+        display: flex;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+        margin: 5px 0 0 0;
+        order: 2;
+    }
+    .knapper a{
+        text-decoration: none;
+        color: #F3EDE7;
+        font-size: 30px;
+        font-weight: lighter;
+    }
+    .knapper-web {
+        background-color: #3D221B;
+        width: 250px;
+        height: 60px;
+        display: flex;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+        margin-left: 41%;
+    }
+}
